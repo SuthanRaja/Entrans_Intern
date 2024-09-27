@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: hsl(0, 0%, 8%);
+  height: 100vh;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=body.css.map */
