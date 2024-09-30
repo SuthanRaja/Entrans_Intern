@@ -1,0 +1,72 @@
+@import "./profile__details";
+@import "./body";
+
+@media screen and (max-width:2500px) {
+
+    .Profile {
+        background-color: hsl(0, 0%, 12%);
+        height: auto;
+        width: 25%;
+        border-radius: 1rem;
+        text-align: center;
+
+        .Profile__ImageContainer {
+            margin: 1rem;
+
+            .Profile__Image {
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                margin-top: 1rem;
+            }
+        }
+
+        .Profile__ButtonContainer {
+            @include flexing();
+            flex-direction: column;
+
+
+            .Profile__Button {
+                width: 75%;
+                border: none;
+                background-color: hsl(0, 0%, 20%);
+                color: hsl(0, 0%, 100%);
+                border-radius: 6px;
+                padding: 0.7rem;
+                margin: 0.4rem;
+                font-size: $smallfont;
+                font-weight: bold;
+
+
+                &:hover {
+                    background-color: hsl(75, 94%, 57%);
+                    color: black;
+                    cursor: pointer;
+                }
+
+            }
+
+            .Profile__Button--BottomSpacing {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .Profile {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    .Profile {
+        width: 80%;
+    }
+
+
+}
